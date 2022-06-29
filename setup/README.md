@@ -87,17 +87,6 @@ mvn clean install
 
 This will generate a target folder where you'll find the jar (also, install saves the same jar into your local cache).
 
-### In case of errors
-
-If you get an error like `Source option 5 is no longer supported. Use 6 or later.` or similar, try editing the `pom.xml` file and add the following:
-
-```xml
-<properties>
-     <maven.compiler.source>$YOUR_JAVA_VERSION</maven.compiler.source>
-     <maven.compiler.target>$YOUR_JAVA_VERSION</maven.compiler.target>
-</properties>
-```
-
 # Introducing the maven wrapper
 
 Nowadays, distributing applications with some kind of wrapper, so you can guarantee it will always be built with the same build tool version, is considered a best practice.
